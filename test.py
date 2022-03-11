@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 
-print(" 이제 한글 쓸 수 있다아아앍 ")
+# 백준 알고리즘 11720
+
+n = int(input())
+num = list(map(int, str(input())))
+print(sum(num))
         
 
 
