@@ -1,4 +1,5 @@
-# ë°±ì¤€ ì•Œê³ ë¦¬ì¦˜ 10952
+# -*- coding: utf-8 -*-
+# ¹éÁØ ¾Ë°í¸®Áò 10952
 
 from hashlib import new
 
@@ -8,7 +9,7 @@ while True:
         break
     print(A+B)
 
-# ë°±ì¤€ ì•Œê³ ë¦¬ì¦˜ 10951
+# ¹éÁØ ¾Ë°í¸®Áò 10951
 
 while True:
     try :
@@ -17,7 +18,7 @@ while True:
     except :
         break
 
-# ë°±ì¤€ ì•Œê³ ë¦¬ì¦˜ 1110
+# ¹éÁØ ¾Ë°í¸®Áò 1110
 
 n = int(input())
 new = n

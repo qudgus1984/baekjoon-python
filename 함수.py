@@ -1,17 +1,17 @@
-# ë°±ì¤€ ì•Œê³ ë¦¬ì¦˜ 15596
+# ¹éÁØ ¾Ë°í¸®Áò 15596
 
-# ë°˜ë³µë¬¸ forì„ ì´ìš©í•œ í’€ì´
+# for ÇÔ¼ö·Î Çª´Â ¹æ¹ı
 def solve(a):
     sum = 0
     for i in a:
         sum += i
     return sum
 
-# ë‚´ì¥ëœ sumì„ ì´ìš©í•œ í’€ì´
+# sum ÇÔ¼ö¸¦ ÀÌ¿ëÇØ Çª´Â ¹æ¹ı
 def solve(a):
   return sum(a)
 
-# ë°±ì¤€ ì•Œê³ ë¦¬ì¦˜ 4673
+# ¹éÁØ ¾Ë°í¸®Áò 4673
 
 numbers = list(range(1, 10001))
 remove_list = []  
@@ -26,7 +26,7 @@ for remove_num in set(remove_list) :
 for self_num in numbers :  
     print(self_num)
 
-# ë°±ì¤€ ì•Œê³ ë¦¬ì¦˜ 1065
+# ¹éÁØ ¾Ë°í¸®Áò 1065
 
 def han(n):
     count = 0
@@ -34,13 +34,13 @@ def han(n):
         return n
     else:
         for i in range(100,(n+1)):
-            h = (i//100) # 100ì˜ ìë¦¬ ìˆ˜
-            t = ((i%100) // 10) # 10ì˜ ìë¦¬ ìˆ˜
-            o = ((i%100) % 10) # 1ì˜ ìë¦¬ ìˆ˜
+            h = (i//100) # 100ÀÇ ÀÚ¸®
+            t = ((i%100) // 10) # 10ÀÇ ÀÚ¸®
+            o = ((i%100) % 10) # 1ÀÇ ÀÚ¸®
             
             if ((h - t) == (t - o)):
                 count += 1
-        return (99 + count) # 1~99ê¹Œì§€ëŠ” ë‹¤ í•œìˆ˜ì´ë¯€ë¡œ
+        return (99 + count) # 1~99´Â ÇÑ¼öÀÌ¹Ç·Î °³¼ö¿¡ Æ÷ÇÔ
 x = int(input())
 hancount = han(x)
 print(hancount)
