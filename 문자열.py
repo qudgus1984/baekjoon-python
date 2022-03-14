@@ -28,3 +28,19 @@ for i in range(re):
         text += int(num) * i
     print(text)
     
+# 백준 알고리즘 1157 : 가장 많이 사용된 알파벳
+
+word = input().upper() # 모두 대문자로 변경
+word_list = list(set(word)) # set 함수로 중복 제거
+x = []
+
+for i in word_list:
+    count = word.count(i)
+    x.append(count)
+    
+if x.count(max(x)) >= 2:
+    print("?")
+    
+else:
+    print(word_list[(x.index(max(x)))])
+    
