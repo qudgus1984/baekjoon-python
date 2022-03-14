@@ -44,3 +44,7 @@ if x.count(max(x)) >= 2:
 else:
     print(word_list[(x.index(max(x)))])
     
+# 백준 알고리즘 1152
+
+word = input().split()
+print(len(word))
