@@ -1,11 +1,7 @@
 # -*- coding: utf-8 -*-
 
-sen = input()
-count = 0
-if sen.count(''):
-    count += count
-print(count + 1)
-        
+a,b = map(list, (int(input().split())))
+print(max(a.reverse,b.reverse))
 
 
   

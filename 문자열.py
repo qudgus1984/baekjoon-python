@@ -48,3 +48,20 @@ else:
 
 word = input().split()
 print(len(word))
+
+# 백준 알고리즘 2098
+
+a,b = list(input().split())
+list_a = list(str(a))
+list_a.reverse()
+a_reverse = "".join(list_a)
+list_b = list(str(b))
+list_b.reverse()
+b_reverse = "".join(list_b)
+if a_reverse > b_reverse:
+    print(a_reverse)
+else:
+    print(b_reverse)
+    
+# 백준 알고리즘 5622
+    
