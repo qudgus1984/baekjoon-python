@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# 백준 알고리즘 11720
-
-n = int(input())
-num = list(map(int, str(input())))
-print(sum(num))
+re = int(input()) # 반복 횟수
+word = list(str(input().split()))
+for i in range(len(word)):
+    print(word[i]*re)
         
 
 
