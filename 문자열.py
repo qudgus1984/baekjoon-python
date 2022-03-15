@@ -86,4 +86,14 @@ for i in word:
         time += 10
 print(time)
     
+# 백준 알고리즘 2941
 
+word = input()
+
+croalpha = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
+
+for i in croalpha:
+    word = word.replace(i,"*")
+print(len(word))
+
+# 백준 알고리즘 1316
