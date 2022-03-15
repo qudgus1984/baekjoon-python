@@ -16,5 +16,38 @@ while n > room:
     cnt += 1
 print(cnt)
 
+# 백준 알고리즘 1193
+
+x = int(input())
+n = 1 # 대각선
+
+while x > n:
+    x -= n
+    n += 1
+
+if n % 2 == 0: # 대각선이 짝수인 경우
+    up = x
+    down = n - x + 1
+elif n % 2 == 1: # 대각선이 홀수인 경우
+    up = n - x + 1
+    down = x
+print(up,"/",down,sep = "")
+
+# 백준 알고리즘 2869
+
+a,b,v = map(int, input().split())
+x = (v-a)/(a-b)+1
+if (v-a)%(a-b) == 0:
+    print(int(x))
+else:
+    print(int(x)+1)
+
+            
+            
+        
+    
+    
+
+
             
     
