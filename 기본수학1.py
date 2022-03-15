@@ -42,6 +42,22 @@ if (v-a)%(a-b) == 0:
 else:
     print(int(x)+1)
 
+# 백준 알고리즘 10250
+
+t = int(input()) # 테스트 케이스
+for i in range(t):
+    h,w,n = map(int, input().split())
+    x=n//h+1 # x는 정문에서 방까지 거리
+    y=n%h # y는 몇 층을 입력받을지
+    if y==0:
+        y=h
+        x-=1
+    print(y*100+x)
+
+    
+        
+    
+
             
             
         
