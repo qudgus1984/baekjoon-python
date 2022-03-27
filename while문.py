@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# ¹éÁØ ¾Ë°í¸®Áò 10952
+# ï¿½ï¿½ï¿½ï¿½ ï¿½Ë°ï¿½ï¿½ï¿½ï¿½ï¿½ 10952
 
 from hashlib import new
 
@@ -9,7 +9,7 @@ while True:
         break
     print(A+B)
 
-# ¹éÁØ ¾Ë°í¸®Áò 10951
+# ï¿½ï¿½ï¿½ï¿½ ï¿½Ë°ï¿½ï¿½ï¿½ï¿½ï¿½ 10951
 
 while True:
     try :
@@ -18,7 +18,7 @@ while True:
     except :
         break
 
-# ¹éÁØ ¾Ë°í¸®Áò 1110
+# ï¿½ï¿½ï¿½ï¿½ ï¿½Ë°ï¿½ï¿½ï¿½ï¿½ï¿½ 1110
 
 n = int(input())
 new = n
@@ -33,5 +33,16 @@ while True:
         break
 print(i)
 
+# 2774
+t = int(input())
+
+for _ in range(t):  
+    floor = int(input())  # ì¸µ
+    num = int(input())  # í˜¸
+    f0 = [x for x in range(1, num+1)]  # 0ì¸µ ë¦¬ìŠ¤íŠ¸
+    for k in range(floor):  # ì¸µ ìˆ˜ ë§Œí¼ ë°˜ë³µ
+        for i in range(1, num):  # 1 ~ n-1ê¹Œì§€ (ì¸ë±ìŠ¤ë¡œ ì‚¬ìš©)
+            f0[i] += f0[i-1]  # ì¸µë³„ ê° í˜¸ì‹¤ì˜ ì‚¬ëŒ ìˆ˜ë¥¼ ë³€ê²½
+    print(f0[-1])  # ê°€ì¥ ë§ˆì§€ë§‰ ìˆ˜ ì¶œë ¥
         
         
